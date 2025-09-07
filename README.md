@@ -7,7 +7,7 @@ Welcome! This repository contains all the tools, scripts, SOPs, and guides I use
 
 ## 🔧 Contents
 
-- 📁 SOPs – Common IT support procedures
+- 📁 SOPs/KB Article – Common IT support procedures
 
 - 📁 Scripts – PowerShell tools for automation
 
