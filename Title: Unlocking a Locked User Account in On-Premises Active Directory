@@ -1,0 +1,53 @@
+Title: Unlocking a Locked User Account in On-Premises Active Directory
+
+Applies To: IT Support / Helpdesk Teams
+Product/Service: Microsoft Active Directory (On-Premises)
+Last Updated: 07/09/2025
+
+Issue
+
+A user is unable to log in and reports that their account is locked. The issue is typically caused by multiple failed password attempts or an application/device repeatedly trying to sign in with an outdated password.
+
+Resolution Steps:
+
+Step 1: Verify the Account Lockout
+
+Log in to the Domain Controller or a server with the Active Directory Users and Computers (ADUC) console installed.
+
+Open Active Directory Users and Computers (ADUC):
+
+Press Windows Key + R, type dsa.msc, and press Enter.
+
+Navigate to the user’s Organizational Unit (OU).
+
+Right-click the user account and select Properties.
+
+Check the Account tab for the status. If locked, you’ll see the “Account is locked out” box checked.
+
+Step 2: Unlock the Account
+
+In the Account tab, uncheck the Account is locked out box.
+
+Click Apply, then OK.
+
+Inform the user their account is unlocked and ask them to try logging in again.
+
+Step 4: Identify Cause (Optional but Recommended)
+
+Check if the user’s account is being locked due to:
+
+Multiple login attempts from different devices.
+
+Mobile devices or Outlook using an old password.
+
+Scheduled tasks or mapped drives with cached credentials.
+
+Update or remove stored passwords from these sources.
+
+Additional Notes
+
+If the account repeatedly locks, review Event Viewer on the Domain Controller for lockout events (Event ID 4740).
+
+Escalate to the System Administrator if the issue persists across multiple unlocks.
+
+✅ End of KB Article
